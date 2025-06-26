@@ -13,7 +13,7 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/')
     console.log(result)
 })
 .catch(error => {
-    console.error(error)
+    console.error(error.name)
 })
 .then ( ()=> {
     console.log(chalk.bgYellow('The Ajax request with Axios is working'))
